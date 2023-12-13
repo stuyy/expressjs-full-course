@@ -6,7 +6,7 @@ import {
 	matchedData,
 	checkSchema,
 } from "express-validator";
-import { createUserValidationSchema } from "./utils/validationSchemas.js";
+import { createUserValidationSchema } from "./utils/validationSchemas.mjs";
 
 const app = express();
 
