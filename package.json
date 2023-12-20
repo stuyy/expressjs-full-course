@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.mjs",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "jest",
+		"test:e2e": "jest --testPathPattern=src/e2e",
 		"start:dev": "nodemon ./src/index.mjs",
 		"start": "node ./src/index.mjs"
 	},
@@ -12,11 +13,25 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"connect-mongo": "^5.1.0",
+		"cookie-parser": "^1.4.6",
 		"express": "^4.18.2",
-		"express-validator": "^7.0.1"
+		"express-session": "^1.17.3",
+		"express-validator": "^7.0.1",
+		"mongoose": "^8.0.3",
+		"passport": "^0.7.0",
+		"passport-discord": "^0.1.4",
+		"passport-local": "^1.0.0"
 	},
 	"devDependencies": {
-		"nodemon": "^3.0.2"
+		"@babel/core": "^7.23.6",
+		"@babel/node": "^7.22.19",
+		"@babel/preset-env": "^7.23.6",
+		"@types/jest": "^29.5.11",
+		"jest": "^29.7.0",
+		"nodemon": "^3.0.2",
+		"supertest": "^6.3.3"
 	},
 	"type": "module"
 }
