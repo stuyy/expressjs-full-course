@@ -3,8 +3,6 @@ import { Strategy } from "passport-discord";
 import { DiscordUser } from "../mongoose/schemas/discord-user.mjs";
 
 passport.serializeUser((user, done) => {
-	console.log(`Inside Serialize User`);
-	console.log(user);
 	done(null, user.id);
 });
 
@@ -43,7 +41,6 @@ export default passport.use(
 				}
 				return done(null, findUser);
 			} catch (err) {
-				console.log(err);
 				return done(err, null);
 			}
 		}
