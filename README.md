@@ -2,7 +2,7 @@
 
 This repository contains the Express API built from my Express JS Full Course video. All of the code written in the video course can be found here.
 
-![ComingSoon](https://github.com/stuyy/expressjs-full-course/assets/25330491/160fa269-75c7-4e1f-81f1-184debafe561)
+![ExpressJSFullCourse](https://github.com/stuyy/expressjs-full-course/assets/25330491/dc3dff94-e1f4-41ed-8ffc-82c3af34da3c)
 
 ## Features
 
